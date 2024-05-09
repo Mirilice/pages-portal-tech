@@ -63,6 +63,27 @@ nav a:hover {
     font-size: 24px; /* Tamanho da fonte do texto ao lado da logo */
 }
 
+/** Read More/Less Button **/
+#read_button {
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
+    margin-top: 15px;
+    background-color: #26aba7;
+    color: #6e214e;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+}
+
+
+#read_button:hover {
+    background-color: transparent;
+    color: #06d62e;
+    transition: all 0.2s ease-in-out;
+}
+
 /* Estilos adicionais para os artigos */
 h1, h2 {
     margin-top: 20px;
