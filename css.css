@@ -1,0 +1,52 @@
+body {
+    font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #eae8e5;
+    color: #26ABA7; /* Cor primária para o texto */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Cabeçalho */
+.header {
+    background: #26ABA7 ;
+    color: #BE3892  ;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-weight: bolder; 
+}
+
+/* Estilos das seções */
+.section {
+    background: #d7eeed;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+/* Títulos das seções */
+.section h2 {
+    color: #00BF63; 
+    margin-bottom: 10px;
+    font-weight: bolder; /* Títulos das seções mais destacados */
+}
+
+/* Estilos das listas */
+ol {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+ol li {
+    margin-bottom: 5px;
+}
