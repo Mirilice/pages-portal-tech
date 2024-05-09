@@ -4,7 +4,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial;
-   
 }
 
 header {
@@ -83,13 +82,18 @@ nav a:hover {
     transition: all 0.2s ease-in-out;
 }
 
+/* Estilos adicionais para os artigos */
+h1, h2 {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+}
 
 img {
     float: left;
     margin-right: 0px;
     max-width: 200px;
 }
-
 
 footer{
     position: fixed;
