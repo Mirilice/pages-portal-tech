@@ -1,11 +1,38 @@
-body {
-    font-family: Arial, sans-serif;
+*{
     margin: 0;
     padding: 0;
-    background-color: #c7e5d3; 
+    font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial;
+    background-color: #eae8e5;
+    color: #26ABA7;
 }
 
-.container_1 {
+header{
+    padding: 10px;  
+    font-weight: 400;
+    color: #26ABA7;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between; /* Ajuste para espaçamento entre os elementos */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+nav.barra ul {
+    list-style-type: none; /* Remover marcadores de lista */
+}
+
+nav.barra ul li {
+    display: inline; /* Exibe os itens em linha */
+    margin-right: 20px; /* Espaçamento entre os itens */
+}
+
+nav.barra ul li a {
+    text-decoration: none; /* Remover sublinhado dos links */
+    color: #26ABA7;
+}
+
+section.container_1 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -25,15 +52,9 @@ h1 {
     text-align: center;
 }
 
-h2 {
-    color: #ff69b4;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
 .form_grupo label {
     font-weight: bold;
-    color: #666; /* Alterada para corresponder ao padrão */
+    color: #666; 
     margin-bottom: 5px;
 }
 
@@ -66,10 +87,18 @@ h2 {
 
 .BUTTONS {
     text-align: center;
-    margin-top: 580px;
+    margin-top: 550px;
 }
 
 .BUTTONS button {
-    margin: 2px;
+    margin: 8px;
     width: 10%;
+    border-radius: 5px;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
 }
