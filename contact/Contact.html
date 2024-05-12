@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="Contact.css">
+</head>
+
+<body>
+    <main class="main_content">
+
+        <section class="container_1">
+            <div class="content">
+                
+                <div class="box-artigo">
+                    <!--Inicia Formulário-->
+                    <div class="container_form">
+                        <h1>Entre em Contato</h1>
+                        <form class="form" action="#" method="post">
+                            <div class="form_grupo">
+                                <label for="name" class="form_label">Nome</label>
+                                <input type="text" name="name" class="form_input" id="name" placeholder="Nome" required>
+                            </div>
+                            
+                            <div class="form_grupo">
+                                <label for="email" class="form_label">Email</label>
+                                <input type="email" name="email" class="form_input" id="email" placeholder="seuemail@email.com" required>
+                            </div>
+                            
+                            <div class="form_grupo">
+                                <label for="message" class="form_label">Mensagem</label>
+                                <textarea id="message" name="message" class="form_input message_input" placeholder="Sua mensagem..." required></textarea>
+                            </div>
+                            
+                            <div class="submit">
+                                <button type="submit" class="submit_btn">Enviar</button>
+                            </div>
+                        </form>
+                    </div><!--container_form-->
+                    <!--Finaliza Formulário-->
+                </div><!--Box Artigo-->
+
+                <div class="clear"></div>
+            </div>
+        </section><!--FECHA BOX HTML-->
+    </main>
+    
+    <div class="BUTTONS">
+        <!-- Botão direcionando para formulário de CPF -->
+        <button onclick="window.location.href = 'form_CPF.html';">Formulário CPF</button>
+        <!-- Botão direcionando para formulário de CNPJ -->
+        <button onclick="window.location.href = 'form_CNPJ.html';">Formulário CNPJ</button>
+    </div>
+</body>
+</html>

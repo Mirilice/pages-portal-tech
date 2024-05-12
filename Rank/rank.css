@@ -1,0 +1,86 @@
+header, footer {
+    background-color: #ffb6c1; 
+    color: black; 
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c7e5d3; 
+    color: black; 
+}
+
+/* Seção Clínica */
+section.clinica {
+    margin: 20px auto; /* Centralizando horizontalmente e mantendo a margem superior e inferior de 20px */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    width: 85%; 
+}
+
+/* Gradient animado */
+section.clinica:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(45deg, #ff4a4a, #fc67e3, #4ed4ff, #3cff77, #fff046);
+    background-size: 400% 400%;
+    border-radius: 20px;
+    z-index: -1;
+    animation: animate 8s linear infinite;
+}
+
+
+@keyframes animate {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.info {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.info img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.info h2 {
+    margin: 0;
+}
+
+.info p {
+    margin: 5px 0;
+}
+
+.info a {
+    color: #e91e63; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.info a:hover {
+    text-decoration: underline;
+}

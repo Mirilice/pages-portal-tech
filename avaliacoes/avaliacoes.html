@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação de Clínicas</title>
+    <link rel="stylesheet" href="avaliacoes.css">
+</head>
+<body>
+
+    <header>
+        <h1>Avaliação Empresas</h1>
+    </header>
+
+    <main>
+        <section id="avaliacao" style="display: none;"> <!-- Oculta a seção de avaliação por padrão -->
+            <h2>Avalie uma Clínica</h2>
+            <form action="#" method="post">
+                <label for="nota">Nota (0 a 10):</label><br>
+                <input type="number" id="nota" name="nota" min="0" max="10" step="0.1" required><br><br>
+                
+                <label for="estrelas">Número de Estrelas (0 a 5):</label><br>
+                <input type="number" id="estrelas" name="estrelas" min="0" max="5" step="0.1" required><br><br>
+                
+                <label for="comentario">Comentário:</label><br>
+                <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea><br><br>
+                
+                <input type="submit" value="Enviar Avaliação">
+            </form>
+        </section>
+
+        <section id="busca">
+            <h2>Busca por Clínicas</h2>
+            <form action="#" method="get" onsubmit="mostrarAvaliacao(); return false;">
+                <label for="cidade">Buscar por cidade:</label><br>
+                <input type="text" id="cidade" name="cidade" required><br><br>
+                
+                <input type="submit" value="Buscar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <button onclick="location.href='#busca'">Buscar</button>
+        <button onclick="location.href='#comentario'">Comentário</button>
+        <button onclick="location.href='#nota'">Nota</button>
+        <button onclick="location.href='#estrelas'">Estrelas</button>
+        <p>&copy; 2024 Avaliação de Clínicas. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function mostrarAvaliacao() {
+            document.getElementById("avaliacao").style.display = "block"; // Mostra a seção de avaliação
+        }
+    </script>
+
+</body>
+</html>
