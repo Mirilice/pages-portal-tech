@@ -1,4 +1,4 @@
-* {
+body {
     margin: 0;
     padding: 0;
     font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial;
@@ -98,7 +98,7 @@ footer {
     bottom: 0;
     text-align: center;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .logo {
@@ -137,5 +137,5 @@ label[for="foto_empresa"]:hover {
 }
 
 .invalid-input {
-    background-color: #a0001b; 
+    background-color: #ff062f; 
 }

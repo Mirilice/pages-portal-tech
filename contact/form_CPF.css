@@ -1,74 +1,140 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #c7e5d3; 
+    font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial;
+    background-color: #eae8e5;
+    color: #26ABA7;
 }
 
-header, footer {
-    background-color: #ffb6c1; 
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+header {
+    padding: 20px 60px;
+    font-weight: 400;
+    color: #26ABA7;
+    border-bottom: 1px solid black; /* borda inferior */
 }
 
-main {
+.menu {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    min-height: calc(100vh - 120px); 
 }
 
-form {
-    width: 320px; 
-    padding: 20px;
-    background-color: #f2f2f2; 
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: fixed; 
-    top: 50%; 
-    right: 0;
-    transform: translateY(-50%); 
+nav.barra ul {
+    list-style-type: none;
+}
+
+nav.barra ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav.barra ul li a {
+    text-decoration: none;
+    color: #26ABA7;
+}
+
+nav.barra ul li a.page {
+    color: #BE3892;
 }
 
 h2 {
-    color: #ff69b4; 
+    margin: 0;
     text-align: center;
-    margin-bottom: 20px;
 }
 
-label {
-    display: block;
+.grupo {
+    max-width: 480px;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
+}
+
+
+.form_label {
+    color: #585757;
     font-weight: bold;
-    color: #666; 
-    margin-bottom: 5px;
 }
 
-input[type="text"],
-input[type="file"],
-textarea {
+.form_input,
+.message_input {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px; 
     box-sizing: border-box;
+    background-color: #ffffff;
+    color: #26ABA7;
 }
 
-textarea {
+.message_input {
     height: 100px;
 }
 
-input[type="submit"] {
-    background-color: #4CAF50; 
+/* Ajustando o botão */
+.submit_btn {
+    background-color: #BE3892;
     color: white;
-    padding: 10px 20px;
+    padding: 20px 40px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-input[type="submit"]:hover {
+.submit_btn:hover {
     background-color: #45a049; 
+    transform: scale(1.1);
+}
+
+footer {
+    position:relative;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 140px;
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 5px;
+    border-radius: 40px;
+    margin-right: -170px;
+}
+
+nav.barra ul li a:hover {
+    color: #FF69B4;
+    transform: scale(2.2);
+}
+
+/* Ajustando e ocultando o campo real de entrada */
+input[type="file"] {
+    display: none;
+}
+
+label[for="foto_pessoa"] {
+    background-color:  #BE3892;
+    color: #ffffff; 
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s, color 0.3s;
+    border-radius: 15px;
+}
+
+/* Ajustando o efeito hover do label */
+label[for="foto_pessoa"]:hover {
+    background-color: #45a049;
+    transform: scale(1.1); 
+}
+
+.invalid-input {
+    background-color: #ff062f; 
 }

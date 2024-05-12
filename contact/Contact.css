@@ -1,11 +1,10 @@
-* {
+body {
     margin: 0;
     padding: 0;
     font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial;
     background-color: #eae8e5;
     color: #26ABA7;
 }
-
 header {
     padding: 10px 60px;
     font-weight: 400;
@@ -47,7 +46,7 @@ section.container_1 {
     max-height: calc(100vh - 180px);
     overflow: auto;
     padding: 20px;
-    background-color: #f2f2f2;
+    background-color: #ffffff;
     border-radius: 15px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
@@ -63,6 +62,7 @@ h1 {
     margin-bottom: 0px;
     padding: 10px 10px;
     border-radius: 15px;
+    background-color: #ffffff;
    
     
 }
@@ -75,7 +75,7 @@ h1 {
     border-radius: 5px;
     box-sizing: border-box;
     border-radius: 15px;
-    background-color: #f2f2f2;
+    background-color: #ffffff;
 }
 
 .message_input {
@@ -84,16 +84,15 @@ h1 {
 
 .submit_btn {
     background-color: #BE3892;
-    color: white; 
-    padding: 10px 20px;
+    color: white;
+    padding: 20px 40px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
-    font-size: 16px;
-    margin-left: 273px;
-    max-width: 150px;
+    font-size: 18px;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.3s;
 }
-
 .submit_btn:hover {
     background-color: #BE3892;
     
@@ -172,4 +171,8 @@ nav.barra ul li a {
 nav.barra ul li a:hover {
     color: #FF69B4;
     transform: scale(2.2);
+}
+
+.invalid-input {
+    background-color: #a0001b; 
 }

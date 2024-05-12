@@ -32,11 +32,9 @@
         <section class="container_1">
             <div class="content">
                 <div class="box-artigo">
-                    <!--Inicia Formulário-->
                     <div class="container_form">
                         <h1>Entre em Contato</h1>
-                        <form class="form" action="#" method="post" onsubmit="return validarFormulario()"
-                            form class="form" action="#" method="post">
+                        <form class="form" action="#" method="post" onsubmit="return validarFormulario()">
                             <div class="form_grupo">
                                 <label for="name" class="form_label">Nome</label>
                                 <input type="text" name="name" class="form_input" id="name" placeholder="Nome" required>
@@ -56,40 +54,44 @@
                                 <button type="submit" class="submit_btn">Enviar</button>
                             </div>
                         </form>
-                    </div><!--container_form-->
-                    <!--Finaliza Formulário-->
-                </div><!--Box Artigo-->
+                    </div>
+                </div>
             </div>
-        </section><!--FECHA BOX HTML-->
+        </section>
     </main>
 
     <div class="BUTTONS">
-        <!-- Botão direcionando para formulário de CPF -->
         <button onclick="window.location.href = 'form_CPF.html';">Formulário CPF</button>
-        <!-- Botão direcionando para formulário de CNPJ -->
         <button onclick="window.location.href = 'form_CNPJ.html';">Formulário CNPJ</button>
     </div>
     <script>
-        // Função para validar o formulário
         function validarFormulario() {
-            var nome = document.getElementById("name").value;
-            var email = document.getElementById("email").value;
-            var mensagem = document.getElementById("message").value;
-            
-            // nome com numerais
-            if (/\d/.test(nome)) { // Ajuste na expressão regular
-        alert("O nome não pode conter numerais.");
-        return false;
-    }
-            
-            // email contém o "@" 
-            if (email.indexOf("@") == -1) {
-                alert("Por favor, insira um endereço de e-mail válido.");
-                return false;
+            var nome = document.getElementById("name");
+            var email = document.getElementById("email");
+            var mensagem = document.getElementById("message");
+            var isValid = true;
+
+            console.log("Validar formulário");
+
+            if (/\d/.test(nome.value)) {
+                console.log("Nome inválido");
+                nome.classList.add('invalid-input');
+                isValid = false;
+            } else {
+                console.log("Nome válido");
+                nome.classList.remove('invalid-input');
             }
             
-            // Se tudo estiver correto, envie o formulário
-            return true;
+            if (email.value.indexOf("@") == -1) {
+                console.log("Email inválido");
+                email.classList.add('invalid-input');
+                isValid = false;
+            } else {
+                console.log("Email válido");
+                email.classList.remove('invalid-input');
+            }
+            
+            return isValid;
         }
     </script>
     <footer>
