@@ -1,67 +1,113 @@
-body {
-    font-family: Arial, sans-serif;
+/* CSS da página Home */
+
+* {
     margin: 0;
     padding: 0;
-    background-color: #c7e5d3; 
+    font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial;
+    background-color: #eae8e5;
+    color: #26ABA7;
 }
 
-.main_content {
-    max-width: 600px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+li {
+    list-style-type: none;
+    display: inline-block;
 }
 
-h1 {
-    text-align: center;
-    margin-bottom: 30px;
+a {
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 400;
 }
 
-.form_input,
-textarea {
-    width: 100%;
+a:hover {
+    color: #00BF63;
+    font-weight: bolder;
+}
+
+nav {
+    display: flex;
+    border-radius: 50%;
     padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
+    align-items: center;
+    font-weight: 500;
 }
 
-textarea {
-    height: 150px;
+header {
+    padding: 10px;
+    font-weight: 400;
 }
 
-.submit_btn {
-    background-color: #ff69b4; 
-    color: white;
-    padding: 15px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+.menu {
+    display: flex;
+    justify-content: space-around;
 }
 
-.submit_btn:hover {
-    background-color: #ff1493;
+hr {
+    width: calc(100% - 40px);
+    border: 3px solid #BE3892;
+    margin: 0 50px;
 }
 
-.BUTTONS {
-    text-align: center;
+section.img-home {
+    margin-top: 10px;
+    border: 8px solid black;
+    display: flex;
+    justify-content: center;
 }
 
-.BUTTONS button {
+img.img-home {
+    width: 100%;
+    height: 260px;
+    margin: 0 50px;
+}
+
+section.navigation {
+    width: calc(100% - 40px);
+    margin: 20px 50px 0 50px;
+    display: flex;
+    justify-content: space-evenly;
+    border: yellow solid 7px;
+}
+
+article {
+    width: 34%;
+}
+
+p {
+    color: #00BF63;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
     margin: 10px;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
 }
 
-.BUTTONS button:hover {
-    background-color: #45a049; 
+button {
+    border: #BE3892 solid 5px;
+}
+
+section.three-images {
+    border: rosybrown solid 8px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 40%;
+}
+
+img.image-generator {
+    width: 30%;
+}
+
+article {
+    text-align: justify;
+    border: 6px orangered solid;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
 }
