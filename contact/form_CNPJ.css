@@ -10,7 +10,7 @@ header {
     padding: 20px 60px;
     font-weight: 400;
     color: #26ABA7;
-    border-bottom: 1px solid black; /* Adiciona uma borda inferior preta */
+    border-bottom: 1px solid black; /* borda inferior */
 }
 
 .menu {
@@ -50,12 +50,12 @@ h2 {
     padding: 20px;
     background-color: #ffffff;
     border-radius: 15px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Corrigindo a cor da sombra */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
 }
 
-/* Ajustando os estilos para os campos de entrada e textarea */
+
 .form_label {
-    color: #585757; /* Alterando a cor do texto para preto */
+    color: #585757;
     font-weight: bold;
 }
 
@@ -65,9 +65,9 @@ h2 {
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
-    border-radius: 10px; /* Tornando as bordas dos campos de entrada arredondadas */
+    border-radius: 10px; 
     box-sizing: border-box;
-    background-color: #ffffff; /* Alterando a cor de fundo para verde */
+    background-color: #ffffff;
     color: #26ABA7;
 }
 
@@ -79,7 +79,7 @@ h2 {
 .submit_btn {
     background-color: #BE3892;
     color: white;
-    padding: 20px 40px; /* Aumentando o padding */
+    padding: 20px 40px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -89,7 +89,7 @@ h2 {
 }
 
 .submit_btn:hover {
-    background-color: #45a049; /* Alterando a cor do botão para verde no hover */
+    background-color: #45a049; 
     transform: scale(1.1);
 }
 
@@ -112,4 +112,30 @@ footer {
 nav.barra ul li a:hover {
     color: #FF69B4;
     transform: scale(2.2);
+}
+
+/* Ajustando e ocultando o campo real de entrada */
+input[type="file"] {
+    display: none;
+}
+
+label[for="foto_empresa"] {
+    background-color:  #BE3892;
+    color: #ffffff; 
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s, color 0.3s;
+    border-radius: 15px;
+}
+
+/* Ajustando o efeito hover do label */
+label[for="foto_empresa"]:hover {
+    background-color: #45a049;
+    transform: scale(1.1); 
+
+}
+
+.invalid-input {
+    background-color: #a0001b; 
 }
