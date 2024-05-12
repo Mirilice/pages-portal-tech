@@ -60,7 +60,10 @@ h1 {
 .form_grupo label {
     font-weight: bold;
     color: #666;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
+    padding: 10px 10px;
+    border-radius: 15px;
+    
 }
 
 .form_input {
@@ -70,6 +73,7 @@ h1 {
     border: 1px solid #ccc;
     border-radius: 5px;
     box-sizing: border-box;
+    border-radius: 15px;
 }
 
 .message_input {
