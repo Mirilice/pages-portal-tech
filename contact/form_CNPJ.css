@@ -1,67 +1,72 @@
-body {
-    font-family: Arial, sans-serif;
+/* Reset CSS */
+* {
     margin: 0;
     padding: 0;
-    background-color: #c7e5d3; 
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial;
+    background-color: #eae8e5;
+    color: #26ABA7;
 }
 
 header {
-    background-color: #ffb6c1; 
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+    padding: 10px 60px;
+    font-weight: 400;
+    color: #26ABA7;
+    border-bottom: 1px solid black; /* Adiciona uma borda inferior preta */
 }
 
-footer {
-    position: fixed;
-    bottom: 0; 
-    left: 0; 
-    width: 100%;
-    background-color: #ffb6c1; 
-    color: white;
-    padding: 10px 0;
-    text-align: center;
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.container {
-    position: fixed;
-    top: 50%;
-    right: 0; 
-    transform: translateY(-50%);
-    max-width: 320px; 
-    width: 70%; 
-    max-height: calc(100vh - 120px); 
-    overflow: auto; 
-    padding: 20px;
-    background-color: #f2f2f2; 
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+nav.barra ul {
+    list-style-type: none;
+}
+
+nav.barra ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav.barra ul li a {
+    text-decoration: none;
+    color: #26ABA7;
+}
+
+nav.barra ul li a.page {
+    color:#BE3892
 }
 
 h1 {
     margin: 0;
-}
-
-h2 {
-    color: #ff69b4;
     text-align: center;
-    margin-bottom: 20px;
 }
 
-.form-container {
-    padding-bottom: 50px;
+/* Estilos do formulário */
+.container {
+    max-width: 360px;
+    width: 70%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-label {
-    display: block;
+.form_grupo label {
     font-weight: bold;
-    color: #666; 
-    margin-bottom: 5px;
+    color: #666;
+    margin-bottom: 0px;
 }
 
-input[type="text"],
-input[type="file"],
-textarea {
+.form_input {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -70,20 +75,37 @@ textarea {
     box-sizing: border-box;
 }
 
-textarea {
+.message_input {
     height: 100px;
 }
 
-input[type="submit"] {
-    background-color: #4CAF50; 
-    color: white;
+.submit_btn {
+    background-color: #BE3892;
+    color: white; 
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    width: 100%; /* Ocupa toda a largura */
 }
 
-input[type="submit"]:hover {
-    background-color: #45a049; 
+.submit_btn:hover {
+    background-color: #BE3892;
+}
+
+/* Rodapé */
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.logo {
+    width: 100px; 
+    height: auto; 
+    margin-right: 5px; 
+    border-radius: 40px;
+    margin-right: -170px;
 }

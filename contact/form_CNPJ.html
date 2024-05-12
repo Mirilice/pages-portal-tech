@@ -5,12 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Pessoa Jurídica</title>
     <link rel="stylesheet" href="form_CNPJ.css">
+    <link rel="shortcut icon" type="imagex/svg" href="../IMG/logo barra.jpg">
 </head>
+
 <body>
     <header>
-        <h1>Empresas Form</h1>
+        <div class="menu">
+            <img class="logo" src="../IMG/Logo.jpg" alt="Logo">
+            <h3>SAÚDE SEM FRONTEIRAS</h3>
+            <nav class="barra">
+                <ul>
+                    <li><a class="page" href="home.html">Home</a></li>
+                    <li><a href="about.html">Quem Somos</a></li>
+                    <li><a href="services.html">Serviços</a></li>
+                    <li><a href="articles.html">Artigos</a></li>
+                    <li><a href="indications.html">Indicações de Clínicas</a></li>
+                    <li><a href="rank.html">Rank</a></li>
+                    <li><a href="assessments.html">Avaliações das Clínicas</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+            </nav> 
+        </div>
     </header>
-    
+
     <main>
         <div class="container">
             <h2>Cadastro de Pessoa Jurídica</h2>
@@ -38,7 +55,21 @@
     </main>
     
     <footer>
-        <p>&copy; 2024 Meu Site. Todos os direitos reservados.</p>
+        <p>&copy; 2024 Saúde Sem Fronteiras</p>
     </footer>
+
+    <script>
+        // Função para validar o formulário
+        function validarFormulario() {
+            var nome = document.getElementById("nome_empresa").value;
+            var cnpj = document.getElementById("cnpj").value;
+            var endereco = document.getElementById("endereco_empresa").value;
+            var descricao = document.getElementById("descricao_empresa").value;
+            
+            // Implemente a validação dos campos conforme necessário
+            
+            return true; // Retorna true para enviar o formulário
+        }
+    </script>
 </body>
 </html>
