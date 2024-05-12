@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 
-/* Estilos gerais */
 body {
     font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial;
     background-color: #eae8e5;
@@ -13,7 +12,7 @@ body {
 }
 
 header {
-    padding: 10px 60px;
+    padding: 20px 60px; /* Aumentando o padding para dar mais espaço */
     font-weight: 400;
     color: #26ABA7;
     border-bottom: 1px solid black; /* Adiciona uma borda inferior preta */
@@ -40,7 +39,7 @@ nav.barra ul li a {
 }
 
 nav.barra ul li a.page {
-    color:#BE3892
+    color: #BE3892;
 }
 
 h1 {
@@ -50,20 +49,22 @@ h1 {
 
 /* Estilos do formulário */
 .container {
-    max-width: 360px;
-    width: 70%;
+    max-width: 410px;
+    width: 90%;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 50px; /* Aumentando a margem superior */
+    margin-bottom: 20px; /* Adicionando margem inferior */
     padding: 20px;
     background-color: #f2f2f2;
-    border-radius: 15px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px; /* Tornando as bordas do container do formulário arredondadas */
+    box-shadow: 0 0 5px rgba(216, 211, 211, 0.1), 0 0 5px rgba(255, 255, 255, 0.8); /* Adicionando efeito de sombra branco */
 }
 
 .form_grupo label {
     font-weight: bold;
     color: #666;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
+    display: block;
 }
 
 .form_input {
@@ -71,27 +72,29 @@ h1 {
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 10px; /* Tornando as bordas dos campos de entrada arredondadas */
     box-sizing: border-box;
 }
 
 .message_input {
-    height: 100px;
+    height: 70px;
 }
 
 .submit_btn {
-    background-color: #BE3892;
-    color: white; 
-    padding: 10px 20px;
+    background-color: #BE3892; /* Alterando a cor do botão para rosa */
+    color: white;
+    padding: 15px 30px; /* Aumentando o padding para aumentar o tamanho do botão */
     border: none;
-    border-radius: 5px;
+    border-radius: 10px; /* Tornando as bordas do botão arredondadas */
     cursor: pointer;
-    font-size: 16px;
-    width: 100%; /* Ocupa toda a largura */
+    font-size: 18px; /* Aumentando o tamanho da fonte */
+    width: 100%;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .submit_btn:hover {
-    background-color: #BE3892;
+    background-color: #45a049; /* Alterando a cor do botão para verde no hover */
+    transform: scale(1.1);
 }
 
 /* Rodapé */
@@ -103,9 +106,9 @@ footer {
 }
 
 .logo {
-    width: 100px; 
-    height: auto; 
-    margin-right: 5px; 
+    width: 100px;
+    height: auto;
+    margin-right: 5px;
     border-radius: 40px;
     margin-right: -170px;
 }
