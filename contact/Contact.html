@@ -35,7 +35,8 @@
                     <!--Inicia Formulário-->
                     <div class="container_form">
                         <h1>Entre em Contato</h1>
-                        <form class="form" action="#" method="post">
+                        <form class="form" action="#" method="post" onsubmit="return validarFormulario()"
+                            form class="form" action="#" method="post">
                             <div class="form_grupo">
                                 <label for="name" class="form_label">Nome</label>
                                 <input type="text" name="name" class="form_input" id="name" placeholder="Nome" required>
@@ -68,7 +69,29 @@
         <!-- Botão direcionando para formulário de CNPJ -->
         <button onclick="window.location.href = 'form_CNPJ.html';">Formulário CNPJ</button>
     </div>
-
+    <script>
+        // Função para validar o formulário
+        function validarFormulario() {
+            var nome = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var mensagem = document.getElementById("message").value;
+            
+            // nome com numerais
+            if (/\d/.test(nome)) { // Ajuste na expressão regular
+        alert("O nome não pode conter numerais.");
+        return false;
+    }
+            
+            // email contém o "@" 
+            if (email.indexOf("@") == -1) {
+                alert("Por favor, insira um endereço de e-mail válido.");
+                return false;
+            }
+            
+            // Se tudo estiver correto, envie o formulário
+            return true;
+        }
+    </script>
     <footer>
         <p>&copy; 2024 Saúde Sem Fronteiras</p>
     </footer>
