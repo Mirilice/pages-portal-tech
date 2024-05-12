@@ -7,11 +7,10 @@
 }
 
 header {
-    padding: 10px 60px;
+    padding: 20px 60px;
     font-weight: 400;
     color: #26ABA7;
     border-bottom: 1px solid black; /* Adiciona uma borda inferior preta */
-    
 }
 
 .menu {
@@ -29,7 +28,6 @@ nav.barra ul li {
     margin-right: 20px;
 }
 
-
 nav.barra ul li a {
     text-decoration: none;
     color: #26ABA7;
@@ -45,7 +43,6 @@ h2 {
 }
 
 .grupo {
-    
     max-width: 480px;
     width: 90%;
     margin: auto;
@@ -56,15 +53,21 @@ h2 {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Corrigindo a cor da sombra */
 }
 
+/* Ajustando os estilos para os campos de entrada e textarea */
+.form_label {
+    color: #585757; /* Alterando a cor do texto para preto */
+    font-weight: bold;
+}
+
 .form_input,
 .message_input {
     width: 100%;
-    padding: 10px 10px;
+    padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     border-radius: 10px; /* Tornando as bordas dos campos de entrada arredondadas */
     box-sizing: border-box;
-    background-color: #ffffff;
+    background-color: #ffffff; /* Alterando a cor de fundo para verde */
     color: #26ABA7;
 }
 
@@ -72,10 +75,11 @@ h2 {
     height: 100px;
 }
 
+/* Ajustando o botão */
 .submit_btn {
     background-color: #BE3892;
     color: white;
-    padding: 15px 30px;
+    padding: 20px 40px; /* Aumentando o padding */
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -90,10 +94,11 @@ h2 {
 }
 
 footer {
-    position: fixed;
+    position:relative;
     bottom: 0;
     text-align: center;
     width: 100%;
+    margin-top: 50px;
 }
 
 .logo {
