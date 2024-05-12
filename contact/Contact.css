@@ -35,9 +35,8 @@ nav.barra ul li a {
 }
 
 nav.barra ul li a.page {
-    color: #FF69B4; 
+    color:#BE3892
 }
-
 section.container_1 {
     position: absolute;
     top: 50%;
@@ -78,7 +77,7 @@ h1 {
 }
 
 .submit_btn {
-    background-color: #4CAF50; 
+    background-color: #BE3892;
     color: white; 
     padding: 10px 20px;
     border: none;
@@ -88,7 +87,8 @@ h1 {
 }
 
 .submit_btn:hover {
-    background-color: #45a049; 
+    background-color:#BE389250; 
+    
 }
 
 .BUTTONS {
@@ -103,7 +103,7 @@ h1 {
 }
 
 .BUTTONS button:nth-child(1) {
-    background-color: #FF69B4; 
+    background-color:#BE3892; 
     color: white; 
     padding: 12px 24px; 
     border: none;
@@ -115,7 +115,7 @@ h1 {
 
 
 .BUTTONS button:nth-child(2) {
-    background-color: #FF69B4; 
+    background-color:#BE3892; 
     color: white; 
     padding: 12px 24px; 
     border: none;
@@ -144,4 +144,24 @@ footer {
 
 h3 {
     margin-left: 0; 
+}
+
+/* Botões */
+.submit_btn,
+.BUTTONS button,
+nav.barra ul li a {
+
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+/* Efeito hover para botões e links de menu */
+.submit_btn:hover,
+.BUTTONS button:hover {
+    background-color:#45a049;
+    transform: scale(1.1);
+}
+
+nav.barra ul li a:hover {
+    color: #FF69B4;
+    transform: scale(2.2);
 }
