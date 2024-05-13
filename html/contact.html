@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display&family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <title>Contato</title>
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="shortcut icon" type="imagex/svg" href="../img/svg/logo.svg">
+</head>
+
+<body>
+    <div class="menu">
+        <header>
+            <img class="logo" src="../img/png/site termometro.png" alt="">
+            <h3>SAÚDE SEM FRONTEIRAS</h3>
+        </header>
+        <nav class="barra">
+            <ul>
+                <li><a  href="home.html">HOME</a></li>
+                <li><a href="about.html">SOBRE</a></li>
+                <li><a href="services.html">SERVIÇOS</a></li>
+                <li><a href="articles.html">ARTIGOS</a></li>
+                <li><a href="devs.html">DEVS</a></li>
+                <li><a class="page" href="contact.html">CONTATO</a></li>
+            </ul>
+        </nav> 
+    </div>
+
+    <hr>
+
+    <main class="main_content">
+        <section class="container_1">
+            <div class="content">
+                <div class="box-artigo">
+                    <div class="container_form">
+                        <h1>Entre em Contato</h1>
+                        <form class="form" action="#" method="post" onsubmit="return validarFormulario()">
+                            <div class="form_grupo">
+                                <label for="name" class="form_label">Nome</label>
+                                <input type="text" name="name" class="form_input" id="name" placeholder="Nome" required>
+                            </div>
+                            
+                            <div class="form_grupo">
+                                <label for="email" class="form_label">Email</label>
+                                <input type="email" name="email" class="form_input" id="email" placeholder="seuemail@email.com" required>
+                            </div>
+                            
+                            <div class="form_grupo">
+                                <label for="message" class="form_label">Mensagem</label>
+                                <textarea id="message" name="message" class="form_input message_input" placeholder="Sua mensagem..." required></textarea>
+                            </div>
+                            
+                            <div class="submit">
+                                <button type="submit" class="submit_btn">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div class="BUTTONS">
+        <button onclick="window.open('form_CPF.html', '_blank');">Formulário CPF</button>
+        <button onclick="window.open('form_CNPJ.html', '_blank');">Formulário CPF</button>
+    </div>
+    <script>
+        function validarFormulario() {
+            var nome = document.getElementById("name");
+            var email = document.getElementById("email");
+            var mensagem = document.getElementById("message");
+            var isValid = true;
+
+            console.log("Validar formulário");
+
+            if (/\d/.test(nome.value)) {
+                console.log("Nome inválido");
+                nome.classList.add('invalid-input');
+                isValid = false;
+            } else {
+                console.log("Nome válido");
+                nome.classList.remove('invalid-input');
+            }
+            
+            if (email.value.indexOf("@") == -1) {
+                console.log("Email inválido");
+                email.classList.add('invalid-input');
+                isValid = false;
+            } else {
+                console.log("Email válido");
+                email.classList.remove('invalid-input');
+            }
+            
+            return isValid;
+        }
+    </script>
+    <footer>
+        <p>&copy; 2024 Saúde Sem Fronteiras</p>
+    </footer>
+</body>
+</html>
