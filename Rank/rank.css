@@ -1,86 +1,92 @@
-header, footer {
-    background-color: #ffb6c1; 
-    color: black; 
-    padding: 10px 0;
-    text-align: center;
-}
-
-/* Body */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #c7e5d3; 
-    color: black; 
+    font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial;
+    background-color: #eae8e5;
+    color: #26ABA7;
 }
 
-/* Seção Clínica */
-section.clinica {
-    margin: 20px auto; /* Centralizando horizontalmente e mantendo a margem superior e inferior de 20px */
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-    overflow: hidden;
-    width: 85%; 
+header {
+    padding: 20px 60px;
+    font-weight: 400;
+    color: #26ABA7;
+    border-bottom: 1px solid black; /* borda inferior */
 }
 
-/* Gradient animado */
-section.clinica:before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-    background: linear-gradient(45deg, #ff4a4a, #fc67e3, #4ed4ff, #3cff77, #fff046);
-    background-size: 400% 400%;
-    border-radius: 20px;
-    z-index: -1;
-    animation: animate 8s linear infinite;
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px; /* Adiciona margem entre o menu e as clínicas */
 }
 
-
-@keyframes animate {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+nav.barra ul {
+    list-style-type: none;
 }
 
-.info {
-    position: relative;
-    z-index: 1;
-    text-align: center;
+nav.barra ul li {
+    display: inline;
+    margin-right: 20px;
 }
 
-.info img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-.info h2 {
-    margin: 0;
-}
-
-.info p {
-    margin: 5px 0;
-}
-
-.info a {
-    color: #e91e63; 
+nav.barra ul li a {
     text-decoration: none;
-    font-weight: bold;
+    color: #26ABA7;
 }
 
-.info a:hover {
-    text-decoration: underline;
+nav.barra ul li a.page {
+    color: #BE3892;
+}
+
+nav.barra ul li a:hover {
+    color: #FF69B4;
+    transform: scale(2.2);
+}
+
+/* Estilos das clínicas */
+#clinicas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza as clínicas horizontalmente */
+    gap: 20px; /* Espaçamento entre as clínicas */
+    margin-top: 20px; /* Adiciona margem entre o menu e as clínicas */
+}
+
+section.clinica {
+    display: inline-block; /* Exibir apenas as clínicas marcadas como ativas */
+    width: calc(25% - 20px); /* 25% do container com 20px de espaçamento entre as clínicas */
+    padding: 20px; /* Espaçamento interno das clínicas */
+    background-color: #FFC0CB; /* Cor de fundo rosa */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+/* Estilos dos botões */
+#previous-button, #next-button {
+    margin-top: 10px;
+    background-color: #FFC0CB; /* Cor rosa para os botões */
+    color: white; /* Texto branco para os botões */
+    padding: 10px 20px; /* Aumenta o tamanho dos botões */
+    border: none;
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer;
+}
+
+#previous-button:hover, #next-button:hover {
+    background-color: #FF69B4; /* Cor rosa mais clara quando hover */
+}
+
+footer {
+    position: fixed; /* Fixa o footer no final da página */
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 140px; /* Espaçamento entre o conteúdo e o footer */
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    margin-right: 5px;
+    border-radius: 40px;
+    margin-right: -170px;
 }

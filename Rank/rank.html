@@ -9,103 +9,48 @@
 <body>
 
     <header>
-        <h1>Rank Clínicas</h1>
+        <div class="menu">
+            <img class="logo" src="../IMG/Logo.jpg" alt="Logo">
+            <h3>SAÚDE SEM FRONTEIRAS</h3>
+            <nav class="barra">
+                <ul>
+                    <li><a class="page" href="home.html">Home</a></li>
+                    <li><a href="about.html">Quem Somos</a></li>
+                    <li><a href="services.html">Serviços</a></li>
+                    <li><a href="articles.html">Artigos</a></li>
+                    <li><a href="indications.html">Indicações de Clínicas</a></li>
+                    <li><a href="rank.html">Rank</a></li>
+                    <li><a href="assessments.html">Avaliações das Clínicas</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+            </nav> 
+        </div>
     </header>
 
     <main>
-        <section class="clinica">
-            <div class="info">
-                <img src="logo_clinica1.jpg" alt="Logo da Clínica">
-                <h2>Nome da Clínica</h2>
-                <p>Nota: - (estrelas: -)</p> <!-- Valores nulos -->
-                <a href="perfil_empresa.html">Ver Perfil</a>
-            </div>
-        </section>
+        <nav>
+            <button id="previous-button" onclick="previousClinics()">Anterior</button>
+            <button id="next-button" onclick="nextClinics()">Próximo</button>
+        </nav>
 
-        <!-- Repetir esta seção conforme necessário para mostrar 10 clínicas -->
-
-        <section class="clinica">
-            <div class="info">
-                <img src="logo_clinica2.jpg" alt="Logo da Clínica">
-                <h2>Nome da Clínica</h2>
-                <p>Nota: - (estrelas: -)</p>
-                <a href="perfil_empresa.html">Ver Perfil</a>
-            </div>
-        </section>
-
-        <section class="clinica">
-            <div class="info">
-                <img src="logo_clinica3.jpg" alt="Logo da Clínica">
-                <h2>Nome da Clínica</h2>
-                <p>Nota: - (estrelas: -)</p>
-                <a href="perfil_empresa.html">Ver Perfil</a>
-            </div>
-        </section>
-
-        <section class="clinica">
-            <div class="info">
-                <img src="logo_clinica4.jpg" alt="Logo da Clínica">
-                <h2>Nome da Clínica</h2>
-                <p>Nota: - (estrelas: -)</p>
-                <a href="perfil_empresa.html">Ver Perfil</a>
-            </div>
-        </section>
-
-        <section class="clinica">
-            <div class="info">
-                <img src="logo_clinica5.jpg" alt="Logo da Clínica">
-                <h2>Nome da Clínica</h2>
-                <p>Nota: - (estrelas: -)</p>
-                <a href="perfil_empresa.html">Ver Perfil</a>
-            </div>
-        </section>
-
-        <section class="clinica">
-            <div class="info">
-                <img src="logo_clinica6.jpg" alt="Logo da Clínica">
-                <h2>Nome da Clínica</h2>
-                <p>Nota: - (estrelas: -)</p>
-                <a href="perfil_empresa.html">Ver Perfil</a>
-            </div>
-        </section>
-
-        <section class="clinica">
-            <div class="info">
-                <img src="logo_clinica7.jpg" alt="Logo da Clínica">
-                <h2>Nome da Clínica</h2>
-                <p>Nota: - (estrelas: -)</p>
-                <a href="perfil_empresa.html">Ver Perfil</a>
-            </div>
-        </section>
-
-        <section class="clinica">
-            <div class="info">
-                <img src="logo_clinica8.jpg" alt="Logo da Clínica">
-                <h2>Nome da Clínica</h2>
-                <p>Nota: - (estrelas: -)</p>
-                <a href="perfil_empresa.html">Ver Perfil</a>
-            </div>
-        </section>
-
-        <section class="clinica">
-            <div class="info">
-                <img src="logo_clinica9.jpg" alt="Logo da Clínica">
-                <h2>Nome da Clínica</h2>
-                <p>Nota: - (estrelas: -)</p>
-                <a href="perfil_empresa.html">Ver Perfil</a>
-            </div>
-        </section>
-
-        <section class="clinica">
-            <div class="info">
-                <img src="logo_clinica10.jpg" alt="Logo da Clínica">
-                <h2>Nome da Clínica</h2>
-                <p>Nota: - (estrelas: -)</p>
-                <a href="perfil_empresa.html">Ver Perfil</a>
-            </div>
-        </section>
+        <div id="clinicas-container">
+            <!-- Aqui serão adicionadas as clínicas dinamicamente pelo JavaScript -->
+            <section class="clinica">
+                <div class="info">
+                    <img src="logo_clinica1.jpg" alt="Logo da Clínica">
+                    <h2>Nome da Clínica</h2>
+                    <p>Nota: - (estrelas: -)</p>
+                    <a href="perfil_empresa.html">Ver Perfil</a>
+                </div>
+            </section>
+            <!-- Repita este bloco para as outras clínicas -->
+        </div>
     </main>
 
     <footer>
         <p>&copy; 2024 Ranking de Clínicas. Todos os direitos reservados.</p>
-    </
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

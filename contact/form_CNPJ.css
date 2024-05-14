@@ -114,7 +114,7 @@ nav.barra ul li a:hover {
     transform: scale(2.2);
 }
 
-/* Ajustando e ocultando o campo real de entrada */
+
 input[type="file"] {
     display: none;
 }
@@ -129,7 +129,6 @@ label[for="foto_empresa"] {
     border-radius: 15px;
 }
 
-/* Ajustando o efeito hover do label */
 label[for="foto_empresa"]:hover {
     background-color: #45a049;
     transform: scale(1.1); 
