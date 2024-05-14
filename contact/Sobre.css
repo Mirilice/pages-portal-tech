@@ -53,6 +53,7 @@ nav.barra ul li a.page {
 
 .container_1:hover {
     background-color: #BE3892;
+    color: #ffffff;
 }
 
 h1 {
@@ -83,7 +84,7 @@ footer {
 
 h1:hover {
     border-color: #BE3892;
-    color: #BE3892;
+    color: #ffffff;
     box-shadow: 0 0 10px rgba(190, 56, 146, 0.5);
 }
 
