@@ -47,7 +47,7 @@ nav.barra ul li a.page {
     border-radius: 15px;
     padding: 20px;
     margin-top: 50px; 
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s;
 }
 
