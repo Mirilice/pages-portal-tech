@@ -34,6 +34,7 @@ window.onload = function() {
 };
 
 function nextClinics() {
+    console.log('Next button clicked');
     startIndex += 4;
     if (startIndex >= listaDeClinicas.length) {
         startIndex = 0;
@@ -42,6 +43,7 @@ function nextClinics() {
 }
 
 function previousClinics() {
+    console.log('Previous button clicked');
     startIndex -= 4;
     if (startIndex < 0) {
         startIndex = Math.floor((listaDeClinicas.length - 1) / 4) * 4;
