@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pessoa Física</title>
+    <link rel="stylesheet" href="form_CPF.css">
+</head>
+<body>
+
+    <header>
+        <div class="menu">
+            <img class="logo" src="../IMG/Logo.jpg" alt="Logo">
+            <h3>SAÚDE SEM FRONTEIRAS</h3>
+            <nav class="barra">
+                <ul>
+                    <li><a class="page" href="home.html">Home</a></li>
+                    <li><a href="Sobre.html">Quem Somos</a></li>
+                    <li><a href="services.html">Serviços</a></li>
+                    <li><a href="articles.html">Artigos</a></li>
+                    <li><a href="indications.html">Indicações de Clínicas</a></li>
+                    <li><a href="rank.html">Rank</a></li>
+                    <li><a href="assessments.html">Avaliações das Clínicas</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                </ul>
+            </nav> 
+        </div>
+    </header>
+
+    <main>
+        <div class="grupo">
+            <h2>Cadastro de Pessoa Física</h2>
+            <div class="form_grupo">
+                <form action="#" method="post" enctype="multipart/form-data" onsubmit="return validarFormularioCPF()">
+                    <div class="form_grupo">
+                        <label for="nome" class="form_label">Nome</label>
+                        <input type="text" name="nome" class="form_input" id="nome" placeholder="Nome" required>
+                    </div>
+                    
+                    <div class="form_grupo">
+                        <label for="cpf" class="form_label">CPF</label>
+                        <input type="text" name="cpf" class="form_input" id="cpf" placeholder="CPF" required>
+                    </div>
+                    
+                    <div class="form_grupo">
+                        <label for="endereco" class="form_label">Endereço</label>
+                        <input type="text" name="endereco" class="form_input" id="endereco" placeholder="Endereço" required>
+                    </div>
+                    
+                    <div class="form_grupo">
+                        <label for="foto_pessoa">Foto:</label><br>
+                        <input type="file" id="foto_pessoa" name="foto_pessoa" accept="image/*" required><br><br>
+                    </div>
+
+                    <div class="form_grupo">
+                        <button type="submit" class="submit_btn">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Saúde Sem Fronteiras</p>
+    </footer>
+
+    <script>
+        function validarFormularioCPF() {
+            var nome = document.getElementById('nome');
+            var cpf = document.getElementById('cpf');
+            var endereco = document.getElementById('endereco');
+            var foto = document.getElementById('foto_pessoa');
+            var fotoExtensao = foto.value.substring(foto.value.lastIndexOf('.') + 1).toLowerCase();
+            
+            var erro = false;
+            
+            if (nome.value.trim() === "" || nome.value.match(/\d/)) {
+                nome.classList.add('invalid-input');
+                erro = true;
+            } else {
+                nome.classList.remove('invalid-input');
+            }
+
+            if (cpf.value.trim() === "" || cpf.value.match(/[^\d]/)) {
+                cpf.classList.add('invalid-input');
+                erro = true;
+            } else {
+                cpf.classList.remove('invalid-input');
+            }
+
+            if (endereco.value.trim() === "" || !endereco.value.match(/\d/) || !endereco.value.match(/[a-zA-Z]/)) {
+                endereco.classList.add('invalid-input');
+                erro = true;
+            } else {
+                endereco.classList.remove('invalid-input');
+            }
+
+            if (foto.value.trim() === "" || (fotoExtensao !== "png" && fotoExtensao !== "jpg")) {
+                foto.classList.add('invalid-input');
+                erro = true;
+            } else {
+                foto.classList.remove('invalid-input');
+            }
+
+            if (erro) {
+                alert("Por favor, corrija os campos destacados em vermelho.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+</body>
+</html>

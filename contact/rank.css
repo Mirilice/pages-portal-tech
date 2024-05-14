@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial;
+    background-color: #eae8e5;
+    color: #26ABA7;
+}
+header {
+    padding: 10px 30px;
+    font-weight: 400;
+    color: #26ABA7;
+    border-bottom: 1px solid black; /* Adiciona uma borda inferior preta */
+    
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav.barra ul {
+    list-style-type: none;
+}
+
+nav.barra ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav.barra ul li a {
+    text-decoration: none;
+    color: #26ABA7;
+}
+
+nav.barra ul li a.page {
+    color:#BE3892
+}
+#clinicas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin: 160px auto 20px; 
+    padding: 0 20px; 
+    max-width: 1200px; 
+  
+}
+
+.clinica {
+    width: 18%; 
+    margin: 1%;
+    padding: 20px;
+    background-color: #FFFFFF; 
+    border-radius: 15px; 
+    border: 2px solid #BE3892;
+    transition: border-color 0.3s, transform 0.3s; 
+}
+
+.clinica:hover {
+    border-color: #26ABA7;
+    transform: scale(1.15);
+}
+nav.barra ul li a:hover {
+    color: #BE3892; 
+}
+.clinica img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.clinica h2 {
+    margin: 0;
+}
+
+.clinica p {
+    margin: 5px 0;
+}
+
+.clinica a {
+    color: #BE3892;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.clinica a:hover {
+    text-decoration: underline;
+}
+
+
+nav {
+    text-align: center; 
+}
+
+nav button {
+    margin: 50px;
+    padding: 15px 30px;
+    background-color: #BE3892;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+nav button:hover {
+    background-color: #26ABA7;
+    transform: scale(1.15);
+}
+
+.logo {
+    width: 100px;
+    height: auto;
+    border-radius: 40px;
+    margin-right: -170px; 
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
