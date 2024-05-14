@@ -5,12 +5,12 @@ body {
     background-color: #eae8e5;
     color: #26ABA7;
 }
-
 header {
-    padding: 20px 60px;
+    padding: 10px 60px;
     font-weight: 400;
     color: #26ABA7;
-    border-bottom: 1px solid black; /* borda inferior */
+    border-bottom: 1px solid black; /* Adiciona uma borda inferior preta */
+    
 }
 
 .menu {
@@ -34,22 +34,31 @@ nav.barra ul li a {
 }
 
 nav.barra ul li a.page {
-    color: #BE3892;
+    color:#BE3892
+}
+#clinicas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin: 160px auto 20px; 
+    padding: 0 20px; 
+    max-width: 1200px; 
+  
 }
 
-nav.barra ul li a:hover {
-    color: #FF69B4;
-    transform: scale(2.2);
-}
-
-/* Estilos das clínicas */
 .clinica {
-    display: inline-block;
-    width: 23%; /* Para exibir 4 clínicas por linha com espaço */
+    width: 18%; 
     margin: 1%;
     padding: 20px;
-    background-color: #ffc0cb; /* Cor de fundo rosa */
-    border-radius: 10px; /* Borda arredondada */
+    background-color: #FFFFFF; 
+    border-radius: 15px; 
+    border: 2px solid #BE3892;
+    transition: border-color 0.3s, transform 0.3s; 
+}
+
+.clinica:hover {
+    border-color: #26ABA7;
+    transform: scale(1.15);
 }
 
 .clinica img {
@@ -68,7 +77,7 @@ nav.barra ul li a:hover {
 }
 
 .clinica a {
-    color: #e91e63; 
+    color: #BE3892;
     text-decoration: none;
     font-weight: bold;
 }
@@ -77,40 +86,37 @@ nav.barra ul li a:hover {
     text-decoration: underline;
 }
 
-/* Estilos dos botões */
+
 nav {
-    text-align: center;
-    margin-top: 20px;
+    text-align: center; 
 }
 
 nav button {
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #e91e63; /* Cor de fundo rosa */
+    margin: 50px;
+    padding: 15px 30px;
+    background-color: #BE3892;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; 
 }
 
 nav button:hover {
-    background-color: #FF69B4; /* Cor de fundo rosa mais clara ao passar o mouse */
+    background-color: #26ABA7;
+    transform: scale(1.15);
 }
 
 .logo {
     width: 100px;
     height: auto;
     border-radius: 40px;
-    margin-right: -170px; /* Ajuste necessário */
+    margin-right: -170px; 
 }
 
 footer {
     position: fixed;
     bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #ffb6c1; 
-    color: black; 
-    padding: 10px 0;
     text-align: center;
+    width: 100%;
 }
