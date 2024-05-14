@@ -60,7 +60,9 @@ nav.barra ul li a.page {
     border-color: #26ABA7;
     transform: scale(1.15);
 }
-
+nav.barra ul li a:hover {
+    color: #BE3892; 
+}
 .clinica img {
     max-width: 100%;
     height: auto;
