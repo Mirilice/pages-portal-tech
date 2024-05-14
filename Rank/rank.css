@@ -17,7 +17,6 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 20px; /* Adiciona margem entre o menu e as clínicas */
 }
 
 nav.barra ul {
@@ -44,49 +43,74 @@ nav.barra ul li a:hover {
 }
 
 /* Estilos das clínicas */
-#clinicas-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Centraliza as clínicas horizontalmente */
-    gap: 20px; /* Espaçamento entre as clínicas */
-    margin-top: 20px; /* Adiciona margem entre o menu e as clínicas */
-}
-
-section.clinica {
-    display: inline-block; /* Exibir apenas as clínicas marcadas como ativas */
-    width: calc(25% - 20px); /* 25% do container com 20px de espaçamento entre as clínicas */
-    padding: 20px; /* Espaçamento interno das clínicas */
-    background-color: #FFC0CB; /* Cor de fundo rosa */
+.clinica {
+    display: inline-block;
+    width: 23%; /* Para exibir 4 clínicas por linha com espaço */
+    margin: 1%;
+    padding: 20px;
+    background-color: #ffc0cb; /* Cor de fundo rosa */
     border-radius: 10px; /* Borda arredondada */
 }
 
+.clinica img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.clinica h2 {
+    margin: 0;
+}
+
+.clinica p {
+    margin: 5px 0;
+}
+
+.clinica a {
+    color: #e91e63; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.clinica a:hover {
+    text-decoration: underline;
+}
+
 /* Estilos dos botões */
-#previous-button, #next-button {
-    margin-top: 10px;
-    background-color: #FFC0CB; /* Cor rosa para os botões */
-    color: white; /* Texto branco para os botões */
-    padding: 10px 20px; /* Aumenta o tamanho dos botões */
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #e91e63; /* Cor de fundo rosa */
+    color: white;
     border: none;
-    border-radius: 5px; /* Borda arredondada */
+    border-radius: 5px;
     cursor: pointer;
 }
 
-#previous-button:hover, #next-button:hover {
-    background-color: #FF69B4; /* Cor rosa mais clara quando hover */
-}
-
-footer {
-    position: fixed; /* Fixa o footer no final da página */
-    bottom: 0;
-    text-align: center;
-    width: 100%;
-    margin-top: 140px; /* Espaçamento entre o conteúdo e o footer */
+nav button:hover {
+    background-color: #FF69B4; /* Cor de fundo rosa mais clara ao passar o mouse */
 }
 
 .logo {
     width: 100px;
     height: auto;
-    margin-right: 5px;
     border-radius: 40px;
-    margin-right: -170px;
+    margin-right: -170px; /* Ajuste necessário */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffb6c1; 
+    color: black; 
+    padding: 10px 0;
+    text-align: center;
 }
