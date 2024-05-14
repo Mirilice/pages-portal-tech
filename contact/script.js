@@ -1,15 +1,11 @@
-
 const listaDeClinicas = [
     { nome: "Clínica 1", nota: "-", estrelas: "-", link: "perfil_empresa.html" },
     { nome: "Clínica 2", nota: "-", estrelas: "-", link: "perfil_empresa.html" },
     { nome: "Clínica 3", nota: "-", estrelas: "-", link: "perfil_empresa.html" },
     { nome: "Clínica 4", nota: "-", estrelas: "-", link: "perfil_empresa.html" }
-
 ];
 
-
 let startIndex = 0;
-
 
 function criarClinicaHTML(clinica) {
     return `
@@ -23,32 +19,32 @@ function criarClinicaHTML(clinica) {
     `;
 }
 
-
 function adicionarClinicasAoContainer() {
     const clinicasContainer = document.getElementById('clinicas-container');
-    clinicasContainer.innerHTML = ''; 
-    listaDeClinicas.forEach(clinica => {
+    clinicasContainer.innerHTML = '';
+    const clinicasExibidas = listaDeClinicas.slice(startIndex, startIndex + 4);
+    clinicasExibidas.forEach(clinica => {
         const clinicaHTML = criarClinicaHTML(clinica);
         clinicasContainer.innerHTML += clinicaHTML;
     });
 }
 
-
 window.onload = function() {
     adicionarClinicasAoContainer();
 };
 
-
 function nextClinics() {
     startIndex += 4;
+    if (startIndex >= listaDeClinicas.length) {
+        startIndex = 0;
+    }
     adicionarClinicasAoContainer();
 }
-
 
 function previousClinics() {
     startIndex -= 4;
     if (startIndex < 0) {
-        startIndex = 0;
+        startIndex = Math.floor((listaDeClinicas.length - 1) / 4) * 4;
     }
     adicionarClinicasAoContainer();
 }

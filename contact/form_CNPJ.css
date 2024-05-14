@@ -89,7 +89,7 @@ h2 {
 }
 
 .submit_btn:hover {
-    background-color: #45a049; 
+    background-color: #26ABA7;
     transform: scale(1.1);
 }
 
@@ -130,7 +130,7 @@ label[for="foto_empresa"] {
 }
 
 label[for="foto_empresa"]:hover {
-    background-color: #45a049;
+    background-color: #26ABA7;
     transform: scale(1.1); 
 
 }
