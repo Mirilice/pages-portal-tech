@@ -36,7 +36,7 @@ nav{
 }
 img.logo{
     max-width: 100px;
-    border-radius: 100%;
+    border-radius: 40%;
     margin-right: 10px;
 }
 header{
@@ -125,13 +125,6 @@ nav button:hover {
     background-color: #26ABA7;
     transform: scale(1.15);
 }
-
-img.logo {
-    max-width: 100px;
-    border-radius: 100%;
-    margin-right: 10px;
-}
-
 
 footer {
     position: fixed;

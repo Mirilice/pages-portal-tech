@@ -41,6 +41,7 @@
                         <button type="submit" class="submit_btn">Enviar</button>
                     </div>
                 </form>
+                <span id="successMessage" class="success-message">Enviado com sucesso!</span>
             </div>
         </div>
     </main>
@@ -50,7 +51,7 @@
     </footer>
 
     <script>
-        function validarFormularioCPF() {
+         function validarFormularioCPF() {
             var nome = document.getElementById('nome');
             var cpf = document.getElementById('cpf');
             var endereco = document.getElementById('endereco');
@@ -59,28 +60,28 @@
             
             var erro = false;
             
-            if (nome.value.trim() === "" || nome.value.match(/\d/)) {
+            if (nome.value.trim() === "" || /\d/.test(nome.value)) {
                 nome.classList.add('invalid-input');
                 erro = true;
             } else {
                 nome.classList.remove('invalid-input');
             }
 
-            if (cpf.value.trim() === "" || cpf.value.match(/[^\d]/)) {
+            if (cpf.value.trim() === "" || /[^\d]/.test(cpf.value)) {
                 cpf.classList.add('invalid-input');
                 erro = true;
             } else {
                 cpf.classList.remove('invalid-input');
             }
 
-            if (endereco.value.trim() === "" || !endereco.value.match(/\d/) || !endereco.value.match(/[a-zA-Z]/)) {
+            if (endereco.value.trim() === "" || !/\d/.test(endereco.value) || !/[a-zA-Z]/.test(endereco.value)) {
                 endereco.classList.add('invalid-input');
                 erro = true;
             } else {
                 endereco.classList.remove('invalid-input');
             }
 
-            if (foto.value.trim() === "" || (fotoExtensao !== "png" && fotoExtensao !== "jpg")) {
+            if (foto.value.trim() === "" || !["png", "jpg", "jpeg"].includes(fotoExtensao)) {
                 foto.classList.add('invalid-input');
                 erro = true;
             } else {
@@ -90,9 +91,14 @@
             if (erro) {
                 alert("Por favor, corrija os campos destacados em vermelho.");
                 return false;
+            } else {
+                var successMessage = document.getElementById('successMessage');
+                successMessage.style.display = 'block';
+                setTimeout(function() {
+                    location.reload();
+                }, 4000);
+                return false;
             }
-
-            return true;
         }
     </script>
 </body>

@@ -58,6 +58,7 @@
                                 <button type="submit" class="submit_btn">Enviar</button>
                             </div>
                         </form>
+                        <span id="successMessage" style="display: none;">Formulário enviado com sucesso!</span>
                     </div>
                 </div>
             </div>
@@ -65,37 +66,46 @@
     </main>
     <div class="BUTTONS">
         <button onclick="window.open('form_CPF.html', '_blank');">Formulário CPF</button>
-        <button onclick="window.open('form_CNPJ.html', '_blank');">Formulário CPF</button>
+        <button onclick="window.open('form_CNPJ.html', '_blank');">Formulário CNPJ</button>
     </div>
     <script>
         function validarFormulario() {
-            var nome = document.getElementById("name");
-            var email = document.getElementById("email");
-            var mensagem = document.getElementById("message");
-            var isValid = true;
+        var nome = document.getElementById("name");
+        var email = document.getElementById("email");
+        var mensagem = document.getElementById("message");
+        var isValid = true;
 
-            console.log("Validar formulário");
+        console.log("Validar formulário");
 
-            if (/\d/.test(nome.value)) {
-                console.log("Nome inválido");
-                nome.classList.add('invalid-input');
-                isValid = false;
-            } else {
-                console.log("Nome válido");
-                nome.classList.remove('invalid-input');
-            }
-            
-            if (email.value.indexOf("@") == -1) {
-                console.log("Email inválido");
-                email.classList.add('invalid-input');
-                isValid = false;
-            } else {
-                console.log("Email válido");
-                email.classList.remove('invalid-input');
-            }
-            
-            return isValid;
+        if (/\d/.test(nome.value)) {
+            console.log("Nome inválido");
+            nome.classList.add('invalid-input');
+            isValid = false;
+        } else {
+            console.log("Nome válido");
+            nome.classList.remove('invalid-input');
         }
+        
+        if (email.value.indexOf("@") == -1) {
+            console.log("Email inválido");
+            email.classList.add('invalid-input');
+            isValid = false;
+        } else {
+            console.log("Email válido");
+            email.classList.remove('invalid-input');
+        }
+        
+        if (isValid) {
+            document.getElementById('successMessage').style.display = 'inline';
+
+        
+            setTimeout(function() {
+                window.location.reload();
+            }, 4000);
+        }
+        
+        return false; 
+    }
     </script>
     <footer>
         <p>&copy; 2024 Saúde Sem Fronteiras</p>

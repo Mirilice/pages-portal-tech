@@ -90,7 +90,6 @@ h2 {
 
 .submit_btn:hover {
     background-color:  #26ABA7;
-    transform: scale(1.1);
 }
 
 p.rodape{
@@ -119,7 +118,6 @@ label[for="foto_empresa"] {
 /* Ajustando o efeito hover do label */
 label[for="foto_empresa"]:hover {
     background-color: #26ABA7;
-    transform: scale(1.1); 
 
 }
 

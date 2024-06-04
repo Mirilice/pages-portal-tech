@@ -36,7 +36,7 @@ nav{
 }
 img.logo{
     max-width: 100px;
-    border-radius: 100%;
+    border-radius: 40%;
     margin-right: 10px;
 }
 header{
@@ -183,14 +183,19 @@ nav.barra ul li a {
 .submit_btn:hover,
 .BUTTONS button:hover {
     background-color:#26ABA7;
-    transform: scale(1.1);
+    transform: scale(1);
 }
 
 nav.barra ul li a:hover {
     color: #BE3892;
-    transform: scale(2.2);
+
 }
 
 .invalid-input {
-    background-color: #a0001b; 
+    border: 2px solid red;
+}
+
+#successMessage {
+    color: green;
+    font-weight: bold;
 }
