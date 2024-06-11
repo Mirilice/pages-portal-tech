@@ -5,8 +5,7 @@
     color: #26ABA7;
 }
 body{
-    background: rgb(112,173,171);
-    background: linear-gradient(90deg, rgba(112,173,171,0.4095763305322129) 0%, rgba(234,232,229,1) 50%, rgba(199,117,172,0.3983718487394958) 100%);
+    background: #fffafa;
 }
 .page{
     color: #BE3892;
