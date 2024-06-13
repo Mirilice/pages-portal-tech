@@ -113,5 +113,46 @@ footer{
     bottom: 0;
     width: 100%;
     text-align: center;
-    margin-top: 35px;
+    position: fixed;
+}
+
+@media (max-width: 1465px) {
+    p{
+        line-height: 2.4;
+    }
+  }
+
+@media (max-width: 1020px) {
+    section.three-images {
+        display: ruby;
+  } 
+}
+
+@media (max-width: 805px) {
+    .menu {
+        display: grid;
+    }
+}
+
+@media (max-width: 495px) {
+    .button {
+        display: none;
+    }
+    section.three-images {
+        display: none;
+    } 
+    nav{
+        display: contents;
+    }
+    hr{
+        display: none;
+    }
+  
+    section#navigation {
+        padding: 1px;
+        width: 180%;
+        height: 100vh; /* Ajusta a altura para ocupar a tela inteira */
+        box-sizing: border-box; 
+      }
+      
 }

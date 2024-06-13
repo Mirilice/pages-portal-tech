@@ -126,4 +126,19 @@ footer{
     width: 100%;
     text-align: center;
     margin-top: 8px;
+    position: fixed;
+}
+
+@media (max-width: 740px) {
+    .menu {
+        display: grid;
+    }
+}
+@media (max-width: 495px) {
+    .menu {
+        display: grid;
+    }
+    nav{
+        display: contents;
+    }
 }
