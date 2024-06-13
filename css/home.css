@@ -113,7 +113,7 @@ footer{
     bottom: 0;
     width: 100%;
     text-align: center;
-    position: fixed;
+    position: relative;
 }
 
 @media (max-width: 1465px) {

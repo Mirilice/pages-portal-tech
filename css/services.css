@@ -126,7 +126,7 @@ footer{
     width: 100%;
     text-align: center;
     margin-top: 8px;
-    position: fixed;
+    position: relative;
 }
 
 @media (max-width: 740px) {

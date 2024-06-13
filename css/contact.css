@@ -85,3 +85,17 @@ button {
 button:hover {
     background-color: #BE3892;
 }
+label {
+    margin: 5px;
+}
+.radio {
+    display: flex;
+    justify-content: center;
+}
+footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
