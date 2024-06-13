@@ -32,83 +32,46 @@
 
     <hr>
 
-    <main class="main_content">
-        <section class="container_1">
-            <div class="content">
-                <div class="box-artigo">
-                    <div class="container_form">
-                        <h1>Entre em Contato</h1>
-                        <form class="form" action="#" method="post" onsubmit="return validarFormulario()">
-                            <div class="form_grupo">
-                                <label for="name" class="form_label">Nome</label>
-                                <input type="text" name="name" class="form_input" id="name" placeholder="Nome" required>
-                            </div>
-                            
-                            <div class="form_grupo">
-                                <label for="email" class="form_label">Email</label>
-                                <input type="email" name="email" class="form_input" id="email" placeholder="seuemail@email.com" required>
-                            </div>
-                            
-                            <div class="form_grupo">
-                                <label for="message" class="form_label">Mensagem</label>
-                                <textarea id="message" name="message" class="form_input message_input" placeholder="Sua mensagem..." required></textarea>
-                            </div>
-                            
-                            <div class="submit">
-                                <button type="submit" class="submit_btn">Enviar</button>
-                            </div>
-                        </form>
-                        <span id="successMessage" style="display: none;">Formulário enviado com sucesso!</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <div class="BUTTONS">
-        <button onclick="window.open('form_CPF.html', '_blank');">Formulário CPF</button>
-        <button onclick="window.open('form_CNPJ.html', '_blank');">Formulário CNPJ</button>
+    <div class="container">
+        <h2>Entre em Contato</h2>
+        <form id="contactForm" onsubmit="validateContactForm(event)">
+            <label for="contactName">Nome:</label>
+            <input type="text" id="contactName" name="contactName" required>
+            <label for="contactEmail">Email:</label>
+            <input type="email" id="contactEmail" name="contactEmail" required>
+            <label for="contactMessage">Mensagem:</label>
+            <textarea id="contactMessage" name="contactMessage" rows="5" required></textarea>
+            <button type="submit">Enviar Mensagem</button>
+            <a href="#cadastrar">
+                <p>Ou, faça o seu cadastro!</p>
+            </a>
+            
+        </form>
     </div>
-    <script>
-        function validarFormulario() {
-        var nome = document.getElementById("name");
-        var email = document.getElementById("email");
-        var mensagem = document.getElementById("message");
-        var isValid = true;
 
-        console.log("Validar formulário");
+    <div class="container">
+        <h2 id="cadastrar">Cadastro</h2>
+        <form id="registrationForm" onsubmit="validateRegistrationForm(event)">
+            <label>
+                <input type="radio" name="tipo" value="usuario" required> Usuário
+            </label>
+            <label>
+                <input type="radio" name="tipo" value="clinica" required> Clínica
+            </label>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+            <label for="cpfCnpj">CPF/CNPJ:</label>
+            <input type="text" id="cpfCnpj" name="cpfCnpj" required>
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
 
-        if (/\d/.test(nome.value)) {
-            console.log("Nome inválido");
-            nome.classList.add('invalid-input');
-            isValid = false;
-        } else {
-            console.log("Nome válido");
-            nome.classList.remove('invalid-input');
-        }
-        
-        if (email.value.indexOf("@") == -1) {
-            console.log("Email inválido");
-            email.classList.add('invalid-input');
-            isValid = false;
-        } else {
-            console.log("Email válido");
-            email.classList.remove('invalid-input');
-        }
-        
-        if (isValid) {
-            document.getElementById('successMessage').style.display = 'inline';
-
-        
-            setTimeout(function() {
-                window.location.reload();
-            }, 4000);
-        }
-        
-        return false; 
-    }
-    </script>
-    <footer>
-        <p>&copy; 2024 Saúde Sem Fronteiras</p>
-    </footer>
+    <script src="contact.js"></script>
 </body>
 </html>

@@ -55,147 +55,33 @@ hr{
     border: 1px solid;
     margin: 0 50px;   
 }
-section.container_1 {
-    margin-top: 35px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 360px;
-    width: 70%;
-    max-height: calc(100vh - 180px);
-    overflow: auto;
+.container {
+    max-width: 600px;
+    margin: 50px auto;
     padding: 20px;
-    background-color: #ffffff;
-    border-radius: 15px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color:#fffafa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 5%;
 }
-
-h1 {
-    margin: 0;
+h2 {
     text-align: center;
-}
-
-.form_grupo label {
-    font-weight: bold;
-    color: #666;
-    margin-bottom: 0px;
-    padding: 10px 10px;
-    border-radius: 15px;
-    background-color: #ffffff;
-}
-
-.form_input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    border-radius: 15px;
-    background-color: #ffffff;
-}
-
-.message_input {
-    height: 100px;
-}
-
-.submit_btn {
-    background-color: #BE3892;
-    color: white;
-    padding: 20px 40px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    font-size: 18px;
-    width: 100%;
-    transition: background-color 0.3s, transform 0.3s;
-}
-.submit_btn:hover {
-    background-color: #BE3892;
-    
-}
-
-.BUTTONS {
-    text-align: center;
-    margin-top: 455px;
-}
-
-.BUTTONS button {
-    margin: 8px;
-    width: 10%;
-    border-radius: 5px;
-}
-
-.BUTTONS button:nth-child(1) {
-    background-color:#BE3892; 
-    color: white; 
-    padding: 12px 24px; 
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold; 
-}
-
-
-.BUTTONS button:nth-child(2) {
-    background-color:#BE3892; 
-    color: white; 
-    padding: 12px 24px; 
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold; 
-}
-
-
-footer{
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    margin-top: 35px;
-}
-
-.logo {
-    width: 100px; 
-    height: auto; 
-    margin-right: 5px; 
-    border-radius: 40px;
-    margin-right: -170px;
-}
-
-h3 {
-    margin-left: 0; 
-}
-
-/* Botões */
-.submit_btn,
-.BUTTONS button,
-nav.barra ul li a {
-
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-/* Efeito hover para botões e links de menu */
-.submit_btn:hover,
-.BUTTONS button:hover {
-    background-color:#26ABA7;
-    transform: scale(1);
-}
-
-nav.barra ul li a:hover {
     color: #BE3892;
-
 }
-
-.invalid-input {
-    border: 2px solid red;
+form {
+    display: flex;
+    flex-direction: column;
 }
-
-#successMessage {
-    color: green;
-    font-weight: bold;
+input, textarea, select, button {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+}
+button {
+    background-color: #26aba7;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #BE3892;
 }
