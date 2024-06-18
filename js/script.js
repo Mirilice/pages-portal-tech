@@ -1,8 +1,8 @@
 const listaDeClinicas = [
-    { nome: "Clínica Minuto Saúde", nota: 10, estrelas: 5, link: "https://www.clinicaminutosaude.com.br/", logo: "../img/jpeg/logo_C.jpeg" },
-    { nome: "Clínica 2", nota: "-", estrelas: "-", link: "perfil_empresa.html" },
-    { nome: "Clínica 3", nota: "-", estrelas: "-", link: "perfil_empresa.html" },
-    { nome: "Clínica 4", nota: "-", estrelas: "-", link: "perfil_empresa.html" }
+    { nome: "Clínica Minuto Saúde", nota: 10, estrelas: 5, link: "https://www.clinicaminutosaude.com.br/", logo: "../img/jpeg/logo_C.jpg" },
+    { nome: "Clínica Popular Saúde", nota: 9, estrelas: 4, link: "https://popularsaudeparatodos.com.br/", logo: "../img/jpeg/popularsaudeparatodos-logo.jpg" },
+    { nome: "Clínica GlobalMED", nota: 7.8, estrelas: 3, link: "https://www.globalmedclinica.com.br/clinica-popular-em-sp/", logo:"../img/png/globalmed.png" },
+    { nome: "Clínica Vale Saúde", nota: 5, estrelas: 1, link: "perfil_empresa.htmhttps://www.valesaude.com.br/l", logo: "../img/png/logo-vale-saude.png" }
 ];
 
 let startIndex = 0;
