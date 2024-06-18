@@ -1,5 +1,5 @@
 const listaDeClinicas = [
-    { nome: "Clínica 1", nota: "-", estrelas: "-", link: "perfil_empresa.html" },
+    { nome: "Clínica Minuto Saúde", nota: 10, estrelas: 5, link: "https://www.clinicaminutosaude.com.br/" },
     { nome: "Clínica 2", nota: "-", estrelas: "-", link: "perfil_empresa.html" },
     { nome: "Clínica 3", nota: "-", estrelas: "-", link: "perfil_empresa.html" },
     { nome: "Clínica 4", nota: "-", estrelas: "-", link: "perfil_empresa.html" }
@@ -8,12 +8,16 @@ const listaDeClinicas = [
 let startIndex = 0;
 
 function criarClinicaHTML(clinica) {
+    let logoHTML = '';
+    if (clinica.logo) {
+        logoHTML = `<img src="${../img/jpeg/logo_c}" alt="Logo ${clinica_logo}">`;
+    }
     return `
     <section class="clinica">
         <div class="info">
             <h2>${clinica.nome}</h2>
             <p>Nota: ${clinica.nota} (estrelas: ${clinica.estrelas})</p>
-            <a href="${clinica.link}">Ver Perfil</a>
+            <a href="${clinica.link}" target="_blank">Ver Perfil</a>
         </div>
     </section>
     `;
