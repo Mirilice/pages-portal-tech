@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial;
+    color: #26ABA7;
+}
+body{
+    background: #fffafa;
+}
+.page{
+    color: #BE3892;
+    font-weight: bolder;
+}
+li{
+    list-style-type: none;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 400;
+}
+a:hover{
+    color: #BE3892;
+    font-weight: bolder;
+}
+nav{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    font-weight: 500;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+img.logo{
+    max-width: 100px;
+    border-radius: 40%;
+    margin-right: 10px;
+}
+header{
+    padding: 10px;  
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
+hr{
+    width: (100% - 40px);
+    border: 1px solid;
+    margin: 0 50px;   
+}
+section{
+    display: flex;
+    margin: 0 50px; 
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+/* Estilos das seções */
+
+.section {
+    margin: 7px;
+    width: 229px;
+    height: 250px;
+    position: relative;
+    display: ruby;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+/* Títulos das seções */
+.section h2 {
+    color: #800457;
+    margin-bottom: 10px;
+    font-weight: bolder; /* Títulos das seções mais destacados */
+}
+img.icons{
+    width: 10%
+}
+
+img.foto{
+    max-width: 100px;
+    margin-right: 10px;
+    border-radius: 20%;
+    transition: transform 0.3s;
+}
+
+img.foto:hover{
+    transform: scale(1.1);
+}
+
+img#correcao{
+    max-height: 100px;
+}
+
+p{
+    text-align: justify;
+    color: #056d6a;
+}
+
+p.rodape{
+    position: absolute;
+    color: #26ABA7;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 35px;
+}

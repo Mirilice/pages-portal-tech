@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Fira Sans", "Helvetica Neue", Helvetica, Arial;
+    background-color:#fffafa;
+    color: #26ABA7;
+}
+.page{
+    color: #BE3892;
+    font-weight: bolder;
+}
+li{
+    list-style-type: none;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 400;
+}
+a:hover{
+    color: #BE3892;
+    font-weight: bolder;
+}
+nav{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    font-weight: 500;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+img.logo{
+    max-width: 100px;
+    border-radius: 40%;
+    margin-right: 10px;
+}
+header{
+    padding: 10px;  
+    font-weight: 400;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
+hr{
+    width: (100% - 40px);
+    border: 1px solid;
+    margin: 0 50px;   
+}
+
+/** Read More/Less Button **/
+#read_button {
+    background-color: #be38914f;
+    text-align: center;
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
+    margin-top: 15px;
+    color:#26aba7;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 10px;
+}
+
+
+#read_button:hover {
+    background-color: transparent;
+    color:  #BE3892;
+    transition: all 0.2s ease-in-out;
+}
+
+section.artigos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding:10px 10px;
+    margin-bottom: 20px;
+}
+div.artigo{
+    margin: 5px;
+    width: 40%;
+    height: 30%;
+    line-height: 1.5;
+    text-align: justify;
+}
+.title{
+    color: #BE3892;
+}
+/* Estilos adicionais para os artigos */
+h1, h2 {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgb(112,173,171);
+    background: linear-gradient(90deg, rgba(112,173,171,0.4095763305322129) 0%, rgba(234,232,229,1) 50%, rgba(199,117,172,0.3983718487394958) 100%);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+img {
+    float: left;
+    margin-right: 0px;
+    max-width: 200px;
+}
+iframe{
+    width: 336px;
+    height: 208px;
+}
+footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 8px;
+}
+
+@media (max-width: 740px) {
+    .menu {
+        display: grid;
+    }
+    nav{
+        display: contents;
+    }
+}
