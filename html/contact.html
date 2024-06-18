@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display&family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <title>Contato</title>
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="shortcut icon" type="imagex/svg" href="../img/svg/logo.svg">
+</head>
+
+<body>
+    <div class="menu">
+        <header>
+            <img class="logo" src="../img/png/site termometro.png" alt="">
+            <h3>SAÚDE SEM FRONTEIRAS</h3>
+        </header>
+        <nav class="barra">
+            <ul>
+                <li><a  href="home.html">HOME</a></li>
+                <li><a href="about.html">SOBRE</a></li>
+                <li><a href="services.html">SERVIÇOS</a></li>
+                <li><a href="articles.html">ARTIGOS</a></li>
+                <li><a href="rank.html">RANKING</a></li>
+                <li><a href="devs.html">DEVS</a></li>
+                <li><a class="page" href="contact.html">CONTATO</a></li>
+            </ul>
+        </nav> 
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <h2>Entre em Contato</h2>
+        <form id="contactForm" onsubmit="validateContactForm(event)">
+            <label for="contactName">Nome:</label>
+            <input type="text" id="contactName" name="contactName"  placeholder="Nome" required>
+            <label for="contactEmail">Email:</label>
+            <input type="email" id="contactEmail" name="contactEmail"  placeholder="seuemail@email.com" required>
+            <label for="contactMessage">Mensagem:</label>
+            <textarea id="contactMessage" name="contactMessage" rows="5"  placeholder="Sua mensagem..." required></textarea>
+            <button type="submit">Enviar Mensagem</button>
+            <a href="#cadastrar">
+                <p>Ou, faça o seu cadastro!</p>
+            </a>
+            
+        </form>
+    </div>
+
+    <div class="container">
+        <h2 id="cadastrar">Cadastro</h2>
+        <form id="registrationForm" onsubmit="validateRegistrationForm(event)">
+            <div class="radio">
+                <label>
+                    <input type="radio" name="tipo" value="usuario" required> Usuário
+                </label>
+                <label>
+                    <input type="radio" name="tipo" value="clinica" required> Clínica
+                </label>
+            </div>
+          
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name"  placeholder="Nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="seuemail@email.com" required>
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password"  placeholder="Crie uma senha" required>
+            <label for="cpfCnpj">CPF/CNPJ:</label>
+            <input type="text" id="cpfCnpj" name="cpfCnpj"  placeholder="CPF ou CNPJ" required>
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco"  placeholder="Rua..." required>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    <script src="contact.js"></script>
+    <footer>
+        <p class="rodape"> &copy; 2024 Saúde Sem Fronteiras</p>
+    </footer>
+</body>
+</html>
